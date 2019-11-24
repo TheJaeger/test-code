@@ -12,4 +12,4 @@ jobs:
           token: ${{ secrets.PA_TOKEN }}
           repository: TheJaeger/test-compiler
           event-type: test-release
-          client-payload: '{"github": ${{ toJson(github) }}}'
+          client-payload: '{"ref": "${{ github.ref }}", "sha": "${{ github.sha }}"}'
