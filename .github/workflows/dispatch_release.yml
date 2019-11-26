@@ -1,4 +1,4 @@
-name: Release Dispatch
+name: Dispatch Payload
 
 on:
   release:
